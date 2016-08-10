@@ -1,0 +1,39 @@
+{
+  "name": "video-frame-clarifai-service-nodejs",
+  "version": "0.0.1",
+  "description": "Object recognition service based on Clarifai.",
+  "main": "index.js",
+  "dependencies": {
+    "clarifai": "^1.2.1",
+    "debug": "^2.2.0",
+    "install": "^0.8.1",
+    "mongoose": "^4.4.12",
+    "npm": "^3.10.5",
+    "nsqjs": "^0.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clickberry/video-frame-clarifai-service-nodejs"
+  },
+  "keywords": [
+    "clickberry",
+    "webservices",
+    "node.js",
+    "video",
+    "frame",
+    "recognition",
+    "vision",
+    "clarifai",
+    "tagging"
+  ],
+  "author": "Alexey Melnikov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/clickberry/video-frame-clarifai-service-nodejs/issues"
+  }
+}
