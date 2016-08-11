@@ -48,15 +48,15 @@ bus.on('frame', function (msg) {
       frameIndex: frame.frameIdx
     });
 
-    query.findOne(function (err, frame) {
+    query.findOne(function (err, f) {
       if (err) return handleError(err);
 
       // save recognition results
-      if (frame) {
+      if (f) {
         debug('Appending clarifai results to the existing frame record.');
 
         // update frame
-        frame.update({ clarifai: results }, function (err) {
+        f.update({ clarifai: results }, function (err) {
           if (err) return handleError(err);
 
           finishProcessing(results);
